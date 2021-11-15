@@ -6,25 +6,34 @@ const output = document.querySelector(".output");
 
 btnH1.addEventListener("click", function () {
   const input = str.value;
-  output.classList.add("h1");
-  output.classList.remove("h2");
-  output.classList.remove("h3");
-  output.innerText = input;
+  if (input !== "") {
+    output.classList.add("h1");
+    output.classList.remove("h2");
+    output.classList.remove("h3");
+    output.innerText = input;
+  } else {
+    output.innerText = "Enter valid text";
+  }
 });
-// 2em
 btnH2.addEventListener("click", () => {
   const input = str.value;
-  output.classList.remove("h1");
-  output.classList.remove("h3");
-  output.classList.add("h2");
-  output.innerText = input;
+  if (input !== "") {
+    output.classList.remove("h1");
+    output.classList.remove("h3");
+    output.classList.add("h2");
+    output.innerText = input;
+  } else {
+    output.innerText = "Enter valid text";
+  }
 });
-// 1.5em
 btnH3.addEventListener("click", () => {
   const input = str.value;
-  output.classList.remove("h1");
-  output.classList.remove("h2");
-  output.classList.add("h3");
-  output.innerText = input;
+  if (input !== "") {
+    output.classList.remove("h1");
+    output.classList.remove("h2");
+    output.classList.add("h3");
+    output.innerText = input;
+  } else {
+    output.innerText = "Enter valid text";
+  }
 });
-// 1.17em
