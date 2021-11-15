@@ -12,7 +12,7 @@ btnH1.addEventListener("click", function () {
     output.classList.remove("h3");
     output.innerText = input;
   } else {
-    output.innerText = "Enter valid text";
+    output.innerText = "Enter some text";
   }
 });
 btnH2.addEventListener("click", () => {
@@ -23,7 +23,7 @@ btnH2.addEventListener("click", () => {
     output.classList.add("h2");
     output.innerText = input;
   } else {
-    output.innerText = "Enter valid text";
+    output.innerText = "Enter some text";
   }
 });
 btnH3.addEventListener("click", () => {
@@ -34,6 +34,6 @@ btnH3.addEventListener("click", () => {
     output.classList.add("h3");
     output.innerText = input;
   } else {
-    output.innerText = "Enter valid text";
+    output.innerText = "Enter some text";
   }
 });
