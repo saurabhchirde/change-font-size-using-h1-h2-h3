@@ -15,7 +15,6 @@ hr {
 h1 {
   text-align: center;
   margin: 3rem 1rem 1rem 1rem;
-  font-size: 1.5rem;
 }
 .container {
   margin: auto;
@@ -39,16 +38,4 @@ button {
 }
 .output {
   text-align: center;
-}
-.h1 {
-  font-size: 32px;
-  font-weight: bolder;
-}
-.h2 {
-  font-size: 24px;
-  font-weight: bolder;
-}
-.h3 {
-  font-size: 18.72px;
-  font-weight: bolder;
 }

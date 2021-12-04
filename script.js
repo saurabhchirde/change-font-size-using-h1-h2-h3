@@ -7,10 +7,7 @@ const output = document.querySelector(".output");
 btnH1.addEventListener("click", function () {
   const input = str.value;
   if (input !== "") {
-    output.classList.add("h1");
-    output.classList.remove("h2");
-    output.classList.remove("h3");
-    output.innerText = input;
+    output.innerHTML = "<h1>" + input + "</h1>";
   } else {
     output.innerText = "Enter some text";
   }
@@ -18,10 +15,7 @@ btnH1.addEventListener("click", function () {
 btnH2.addEventListener("click", () => {
   const input = str.value;
   if (input !== "") {
-    output.classList.remove("h1");
-    output.classList.remove("h3");
-    output.classList.add("h2");
-    output.innerText = input;
+    output.innerHTML = "<h2>" + input + "</h2>";
   } else {
     output.innerText = "Enter some text";
   }
@@ -29,10 +23,7 @@ btnH2.addEventListener("click", () => {
 btnH3.addEventListener("click", () => {
   const input = str.value;
   if (input !== "") {
-    output.classList.remove("h1");
-    output.classList.remove("h2");
-    output.classList.add("h3");
-    output.innerText = input;
+    output.innerHTML = "<h3>" + input + "</h3>";
   } else {
     output.innerText = "Enter some text";
   }
